@@ -29,13 +29,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
   </head>
 
   <body>
-    <nav class="navbar navbar-light navbar-expand-md" id="Navbar">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top animate__animated animate__fadeInDown" id="Navbar">
       <div class="container">
-        <a class="navbar-brand"><img id="Nav-Image" src="assets/img/Kryptic_Logo.svg" alt="Kryptic Logo" /></a
-        ><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2">
+        <a class="navbar-brand">
+          <img id="Nav-Image" src="assets/img/Kryptic_Logo.svg" alt="Kryptic Logo" /><span>KRYPTIC</span>
+        </a>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2">
           <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navcol-2">
@@ -55,7 +58,7 @@
       <div class="container py-4 py-xl-5" id="Hero-Container">
         <div class="row gy-4 gy-md-0" id="Hero-Row">
           <div
-            class="col-12 col-lg-8 text-md-start d-sm-flex d-md-flex flex-column justify-content-md-start align-items-md-center justify-content-xl-start"
+            class="col-12 col-lg-8 text-md-start d-sm-flex d-md-flex flex-column justify-content-md-start align-items-md-center justify-content-xl-start animate__animated animate__fadeInLeft"
             id="Hero-Left-Column"
           >
             <h1 id="Hero-Heading"><strong>USER CENTRIC SOFTWARE MEETS SEAMLESS INFRASTRUCTURE</strong></h1>
@@ -65,7 +68,11 @@
             </p>
           </div>
           <div class="col-12 col-lg-4" id="Hero-Right-Column">
-            <img id="Hero-Image" src="assets/img/hero-block.png" />
+            <img
+              id="Hero-Image"
+              class="animate__animated animate__fadeIn animate__slow"
+              src="assets/img/hero-block.png"
+            />
           </div>
         </div>
       </div>
@@ -174,7 +181,9 @@
     </section>
     <footer class="text-center" id="Footer">
       <div class="container" id="Footer-Container">
-        <img id="Footer-Image" src="assets/img/Kryptic_Logo.svg" />
+        <a class="navbar-brand">
+          <img id="Nav-Image" src="assets/img/Kryptic_Logo.svg" alt="Kryptic Logo" /><span>KRYPTIC</span>
+        </a>
         <ul class="list-inline d-flex flex-row justify-content-center align-items-center" id="Footer-Social">
           <li class="list-inline-item d-flex justify-content-center align-items-center footer-social-icon">
             <i class="fab fa-twitter social-icon"></i>
@@ -202,5 +211,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>
