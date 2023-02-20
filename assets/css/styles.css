@@ -1,7 +1,21 @@
+body {
+  color: #121212;
+  line-height: 1.5;
+  font-family: Inter, sans-serif;
+  padding: 0px 20px;
+  background: #f6f6f7;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 p {
   color: #444444;
   font-size: 1.125rem;
   margin-bottom: 24px;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 p.lead {
@@ -12,68 +26,65 @@ p.lead {
 span.outline {
   font-size: 32px;
   font-weight: bold;
-  font-family: 'Conthrax Rg';
+  font-family: "Conthrax Rg";
   border-width: 0px;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 
-@media (min-width: 768px) {
-  div.product-card {
-    background: url("../../assets/img/columns.png") right / 80% no-repeat, #FFFFFF!important;
-  }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Conthrax Rg";
+  font-size: 24px;
 }
 
-@media (min-width: 300px) {
-  div.product-card {
-    min-height: 495px;
-    border-radius: 24px;
-    background: url("../../assets/img/columns.png") left / 80% no-repeat, #FFFFFF;
-    box-shadow: 0px 0px 24px rgba(0,0,0,0.05);
-    padding: 32px;
-  }
+#Navbar {
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
 }
 
-body {
-  color: #121212;
-  line-height: 1.5;
-  font-family: Inter, sans-serif;
-  padding: 0px 20px;
-  background: #F6F6F7;
+#Nav-Image {
+  height: 44px;
 }
 
-#About {
-  margin-bottom: 40px;
-  margin-top: -60px;
+.navbar-toggler {
+  border: none;
+  padding: 0;
 }
 
-#About-Heading {
-  font-family: 'Conthrax Rg';
-  margin-bottom: 24px;
+#Nav-Button {
+  background: #ffffff;
+  font-family: "Conthrax Rg";
+  color: #262626;
+  padding: 18px 40px;
+  border-radius: 100px;
+  border-style: none;
+  border-top-style: none;
+  font-size: 14px;
 }
 
-section {
-  margin-bottom: 40px;
-}
-
-#Action {
-  padding: 40px 0px;
-  border-top: 1px solid #C8C8C9;
-  border-bottom: 1px solid #C8C8C9;
-  margin-bottom: 40px;
+#Hero {
+  overflow-x: hidden;
 }
 
 #Hero-Heading {
-  font-family: 'Conthrax Rg';
+  font-family: "Conthrax Rg";
   color: rgb(18, 18, 18);
   font-size: 32px;
   line-height: 1.5;
   margin-bottom: 24px;
+  word-wrap: break-word;
 }
 
 #Hero-Left-Column {
   margin-bottom: 60px;
+}
+
+#Hero-Right-Column {
+  margin-top: 0;
 }
 
 #Hero-Image {
@@ -84,15 +95,39 @@ section {
   height: 350px;
 }
 
+#About {
+  margin-bottom: 40px;
+  margin-top: -120px;
+}
+
+#About-Heading {
+  font-family: "Conthrax Rg";
+  margin-bottom: 24px;
+}
+
+.product-card {
+  min-height: 495px;
+  border-radius: 24px;
+  background: url("../../assets/img/archs.png");
+  background-size: contain;
+  background-color: #3d3d3d;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
 .product-card-details {
   font-size: 1rem;
+  color: #f6f6f7;
 }
 
 .product-card-heading {
-  font-family: 'Conthrax Rg';
+  font-family: "Conthrax Rg";
   margin-bottom: 24px;
-  text-align: left;
+  text-align: center;
   font-size: 20px;
+  color: #f6f6f7;
 }
 
 #Partners-Left-Column {
@@ -100,12 +135,8 @@ section {
 }
 
 #Partners-Heading {
-  font-family: 'Conthrax Rg';
+  font-family: "Conthrax Rg";
   margin-bottom: 24px;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Conthrax Rg';
 }
 
 .validator-details {
@@ -117,17 +148,23 @@ h1, h2, h3, h4 {
   font-weight: bold;
   margin: 0;
 }
+#Action {
+  padding: 40px 0px;
+  border-top: 1px solid #c8c8c9;
+  border-bottom: 1px solid #c8c8c9;
+  margin-bottom: 40px;
+}
 
 #Action-Heading {
-  font-family: 'Conthrax Rg';
+  font-family: "Conthrax Rg";
   margin-bottom: 24px;
   text-align: center;
 }
 
 #Action-Button {
   background: #262626;
-  font-family: 'Conthrax Rg';
-  color: #F6F6F7;
+  font-family: "Conthrax Rg";
+  color: #f6f6f7;
   width: 100%;
   padding: 16px 0px;
   border-radius: 100px;
@@ -138,7 +175,7 @@ h1, h2, h3, h4 {
   width: 36px;
   background: #121212;
   border-radius: 36px;
-  margin-right: 16px!important;
+  margin-right: 16px !important;
 }
 
 #Footer {
@@ -155,30 +192,62 @@ h1, h2, h3, h4 {
 }
 
 .social-icon {
-  color: #F6F6F7;
+  color: #f6f6f7;
   font-size: 20px;
 }
 
-#Nav-Image {
-  height: 44px;
-}
+@media (min-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 32px;
+  }
+  section {
+    margin-bottom: 60px;
+  }
+  #Hero-Heading {
+    font-size: 52px;
+  }
 
-.navbar-toggler {
-  border: none;
-  padding: 0;
-}
+  #Hero p {
+    font-size: 28px;
+  }
+  #Hero-Image {
+    height: 550px;
+  }
+  #About {
+    margin-bottom: 60px;
+    margin-top: -180px;
+  }
 
-.btn {
-}
+  #About-Heading {
+    margin-bottom: 32px;
+  }
 
-#Nav-Button {
-  background: #FFFFFF;
-  font-family: 'Conthrax Rg';
-  color: #262626;
-  padding: 18px 40px;
-  border-radius: 100px;
-  border-style: none;
-  border-top-style: none;
-  font-size: 14px;
-}
+  .product-card-heading {
+    text-align: left;
+    font-size: 24px;
+  }
+  #Partners-Right-Column {
+    margin-top: 64px;
+  }
 
+  .validator-details {
+    margin-bottom: 36px;
+  }
+  #Action {
+    padding: 60px 0px;
+  }
+
+  #Action-Button {
+    max-width: 240px;
+  }
+  #Footer {
+    padding-bottom: 60px;
+  }
+
+  #Footer-Image {
+    height: 54px;
+  }
+}
