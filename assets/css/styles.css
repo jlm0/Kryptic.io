@@ -134,6 +134,7 @@ h4 {
 }
 
 .product-card-details {
+  margin-bottom: 0;
   font-size: 1rem;
   color: #f6f6f7;
 }
@@ -215,7 +216,27 @@ h4 {
   font-size: 20px;
 }
 
+.nav-active .container {
+  background-color: #121212;
+  padding: 12px 12px;
+  border-radius: 24px;
+  transition: background-color 0.75s ease;
+}
+.nav-active .navbar-brand svg path {
+  fill: #f6f6f7;
+}
+
+.nav-active .navbar-toggler svg path {
+  stroke: #f6f6f7;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
 @media (min-width: 768px) {
+  .navbar-collapse {
+    text-align: center;
+  }
   body {
     padding: 0px 40px;
   }
@@ -233,14 +254,8 @@ h4 {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
   }
-  .nav-active .container {
-    background-color: #3d3d3d;
-    padding: 12px 12px;
-    border-radius: 24px;
-    transition: background-color 0.75s ease;
-  }
-  .nav-active .navbar-brand span {
-    color: #f6f6f7;
+  .navbar-collapse {
+    text-align: initial;
   }
   #Hero-Heading {
     font-size: 52px;
